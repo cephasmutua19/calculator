@@ -7,8 +7,10 @@ body{
     display: grid;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #d9dcdf;
+    height: 90vh;
+    width: 100vw;
+    background-color: hsl(135, 4%, 55%);
+    /* position: relative; */
 }
 .calc-body{
     max-height: fit-content;
@@ -20,7 +22,37 @@ body{
     background-color: #ecf0f3;
     border-radius: 2em;
     box-shadow: inset .2em .2em .4em #fff, .2em .2em .4em hsl(90, 5%, 74%);
+    position: relative;
 }
+.logo{
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    left: 1.5em;
+    top: .7em;
+    mix-blend-mode: exclusion;
+    filter: opacity(.35);
+    border: 2px solid hsl(180, 2%, 48%);
+    border-radius: 50%;
+}
+.label{
+    display: flex;
+    position: absolute;
+    right: 5em;
+    bottom: 0em;
+    justify-content: center;
+    align-items: center;
+}
+.logo-label{
+    height: 3em;
+    width: auto;
+}
+.logo-title{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
 button{
     min-height: 3em;
     min-width: 3em;
