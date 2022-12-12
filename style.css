@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d9dcdf;
+}
+.calc-body{
+    
+    /* border: 2px solid hsl(92, 10%, 50%); */
+    max-height: fit-content;
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+    justify-items: center;
+    /* align-items: center; */
+    padding: 1.3em;
+    background-color: #ecf0f3;
+    border-radius: 2em;
+    box-shadow: inset .2em .2em .4em #fff, .2em .2em .4em hsl(90, 5%, 74%);
+}
+button{
+    min-height: 3em;
+    min-width: 3em;
+    margin: .4em;
+    font-size: 1rem;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    background-color: #ecf0f3;
+    box-shadow: -.2em -.2em .4em #fff, .4em .4em .4em hsl(90, 5%, 74%);
+
+}
+#ans{
+    grid-column: span 2;
+    min-width: 7em;
+    border-radius: 3em;
+}
+#input{
+    margin: .7em auto .7em auto;
+    border: none;
+    outline: none;
+    /* border: 2px solid #ddd; */
+    border-radius: .6em;
+    grid-column: span 4;
+    text-align: end;
+    width: 5em;
+    height: 1.4em;
+    background-color: #ecf0f3;
+    box-shadow: inset -.2em -.2em .5em #fff, inset .1em .1em .2em hsla(86, 5%, 74%, 0.849);
+    padding: .2em;
+    font-size: 3rem;
+    color: hsl(90, 2%, 45%);
+    text-shadow: .1rem .1rem rgba(95, 158, 160, 0.815);
+
+}
+
