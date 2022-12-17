@@ -4,10 +4,10 @@
 body{
     margin: 0;
     padding: 0;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
     background-color: hsl(135, 4%, 55%);
     /* position: relative; */
@@ -69,6 +69,7 @@ button{
     grid-column: span 2;
     min-width: 7em;
     border-radius: 3em;
+    background-color: hsl(10, 91%, 85%);
 }
 #input{
     margin: .7em auto .7em auto;
